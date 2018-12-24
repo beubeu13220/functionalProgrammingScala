@@ -1,0 +1,7 @@
+set shellPrompt := { _ => "" }
+set SettingKey[Option[File]]("sbt-structure-output-file") in Global := Some(file("/tmp/sbt-structure0.xml"))
+set SettingKey[String]("sbt-structure-options") in Global := "resolveClassifiers" 
+apply -cp "/home/brehelin/.IdeaIC15/config/plugins/Scala/launcher/sbt-structure-1.2.jar" org.jetbrains.sbt.CreateTasks
+*/*:dump-structure
+exit
+;set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/tmp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/home/brehelin/.IdeaIC2018.3/config/plugins/Scala/launcher/sbt-structure-1.0.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
