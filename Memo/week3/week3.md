@@ -1,5 +1,6 @@
-# Class Hierarchies
-
+# Week 3
+###
+### Class Hierarchies
 - ** Abstract Classes ** : est une classe qui peut contenir des membres sans implémentation, on ne peut créer une nouvelle instance avec new
 - ** Abstract Classes ** : permet ensuite de créer des extensions **extend** à cette classe, les classes extend doivent être conforme à l'abstract classe
 - Lorsqu'on crée une classe à partir d'une abstract classe on parle de **superclass** et de **subclasse** pour la classe créée à partir de l'abstract classe
@@ -10,7 +11,7 @@
 - standalone applications, on crée une fonction main dans un object. Une fois le programme compilé il suffit de faire scala le nom de l'object
 - **dynamic method dispatch** : This means that the code invoked by a method call depends on the runtime type of the object that contains the method. Dynamic dispatch of methods is analogous to calls to higher-order functions.
 
-# How Classes are Organized
+### How Classes are Organized
 
 - classes et object sont organisés dans des packages
 ```scala
@@ -30,7 +31,7 @@ object Hello { ... }
 - Nothing est sous type de tous les autres types, il n'a pas de valeur. Le type nothing est notamment le type des exceptions
 - Le type de null est Null. Null est une sous classe de tous les objects par contre il est incompatible avec les AnyVal
 
-# Polymorphism
+### Polymorphism
 
 - Une strucutre importante dans les langages fonctionnel est la liste lié immutable. Elle est construit en deux block : Nil & Cons
 - On peut utiliser **val** directement dans la définition des paramètres de classe. Ainsi, on a pas a définir la variable dans le block de la classe
