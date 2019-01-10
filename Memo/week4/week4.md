@@ -96,8 +96,12 @@ nums = 1 :: (2 :: (3 :: (4 :: Nil)))
 nums = 1 :: 2 :: 3 :: 4 :: Nil
 ```
 - On peut omettre les parenthèses avec ::, scala interprete directement avec les parenthèses
-- **insertion sort**
+- **insertion sort** : Complexité n*n (quatratic)
 ```scala
+def insert(x: Int, xs: List[Int]): List[Int] = xs match {
+case List() => List(x)
+case y :: ys => if(x<=y) x::xs else y::insert(x,ys)
+}
 def isort(xs: List[Int]): List[Int] = xs match {
 case List() => List()
 case y :: ys => insert(y, isort(ys))
