@@ -4,7 +4,17 @@
 
 - Un pure langage orient objet est un langage où toutes les valeurs sont des objets
 - Slides avec implémentation de classe pour les types primitifs Int, Boolean, ...
-
+- Ref : unary
+```scala
+abstract class Boolean {
+    def ifThenElse[T](t: => T, e: => T): T
+    def && (x: => Boolean): Boolean = ifThenElse(x, false)
+    def || (x: => Boolean): Boolean = ifThenElse(true, x)
+    def unary_!: Boolean = ifThenElse(false, true)
+    def == (x: Boolean): Boolean = ifThenElse(x, x.unary_!)
+    def != (x: Boolean): Boolean = = ifThenElse(x.unary_!, x)
+}
+```
 ### Functions as Objects
 
 - En scala les fonctions sont traitées comme des objets
