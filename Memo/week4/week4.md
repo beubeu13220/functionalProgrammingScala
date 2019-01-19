@@ -2,7 +2,7 @@
 ###
 ### Object Everywhere
 
-- Un pure langage orient objet est un langage où toutes les valeurs sont des objets
+- Un pure langage orient objet est un language où toutes les valeurs sont des objets
 - Slides avec implémentation de classe pour les types primitifs Int, Boolean, ...
 - Ref : unary
 ```scala
@@ -44,7 +44,7 @@ def assertAllPos[S <: IntSet](r: S): S = ...
 - **lower bound** [S >: NonEmpty], on peut utiliser seulement des supertypes de NonEmpty donc soit
 NonEmpty, IntSet, AnyRef, Any
 - **Mixed Bound** : [S >: NonEmpty <: IntSet]
-- **Covariance** : Types sont covariant lorsque la relation entre subtype et supertype est respecté avec un autre type parameter
+- **Covariance** : Types sont covariant lorsque la relation entre subtype et supertype est respectée avec un autre type parameter
 ```scala
 NonEmpty <: IntSet
 List[NonEmpty] <: List[IntSet]
@@ -72,7 +72,7 @@ type B one should also be able to do with a value of type A.
 ### Decomposition
 - Demonstration avec Expression que ça devient très rapidement fastidieux avec notre hiérarchie d'ajouter des classes
 - Extend hierarchy : method grow quatradiquement
-- non solution : On utilise TypeTest and TypeCast pour ne plus à avoir a implémenter les méthode isNumber, isEval, ... on peut checker rapidement le type de l'objet. Donc plus besoin de classification methode. Low level and unsafe solution
+- non solution : On utilise TypeTest and TypeCast pour ne plus à avoir a implémenter les méthodes isNumber, isEval, ... on peut checker rapidement le type de l'objet. Donc plus besoin de classification methode. Low level and unsafe solution
 - isInstanceOf : Check si l'objet est de type T et renvoie un boolean
 - asInstanceOf : Essaie de caster l'objet dans le type T sinon lève une exception si le cast n'est pas possible
 - Il faut prendre des précautions avec TypeCast car on peut rapidement avoir une exception dans notre code
@@ -86,7 +86,7 @@ type B one should also be able to do with a value of type A.
 - Each case associates an expression expr with a pattern pat.
 - A MatchError exception is thrown if no pattern matches the value of the selector.
 - variables doivent toujours commencer par une miniscule
-- Constantes commence par une lettre majuscule
+- Constantes commencent par une lettre majuscule
 - Le matching des conditions est éffectué dans l'ordre où on a écrit match case
 
 ### Lists

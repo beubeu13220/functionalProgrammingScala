@@ -2,21 +2,21 @@
 ###
 ### Other collection
 
-- On a vu que les list sont linéaire mais accéder au head est bien plus rapide que accéder au last
+- On a vu que les list sont linéaires mais accéder au head est bien plus rapide que accéder au last
 - **Vector** :
 - Sequence alternative au list
-- Les accès aux élements sont plus équitable que pour les listes head vs last
+- Les accès aux élements sont plus équitables que pour les listes head vs last
 - '''Scala val nums = Vector(1, 2, 3, -88) '''
 - Les vectors supportent les mêmes opérations que les listes sauf ::, on peut utiliser à la place :
  - x +: xs : On crée un nouveau vector avec x premier élement
  - xs +: x : On crée un nouveau vector avec x dernier élement
 - Les vectors sont des Array de 32 élements
-- Si un vectors est plus large que 32 élements on peut placer des Array de 32 élements dans les 32 premiers élements
-- Avec la formule log10(N)/log10(32) on obtient la profondeur du vecteur avec N le nombre d'élement
-- Avec math.pow(32,x) on obtient le nombre d'élement pour une profondeur x
-- Vectors on accède plus rapidement au dernier élement grâce aux index  (la complexité augmente bien moins vite qu'avec une liste)
+- Si un vector est plus large que 32 élements on peut placer des Array de 32 élements dans les 32 premiers élements
+- Avec la formule log10(N)/log10(32) on obtient la profondeur du vecteur avec N le nombre d'élements
+- Avec math.pow(32,x) on obtient le nombre d'élements pour une profondeur x
+- Vector on accède plus rapidement au dernier élement grâce aux index  (la complexité augmente bien moins vite qu'avec une liste)
 - On accède plus lentemment au head avec Vector car on doit parcourir des Array vs List
-- **Pour les actions récursives head/tail les list sont préférables pour les bulk operation map,filter,... les vectors sont preferable**
+- **Pour les actions récursives head/tail les list sont préférables pour les bulk operation map,filter,... les vectors sont preferables**
 - Vector et List sont des sous-classe de sequence, qui est elle même une sous classe de iterable
 - **Array** et **String** sont des sous classe de sequence, donc ils supportent les opérations de sequence (map, filter,...)
 - **Range** est également une sous classe de sequence :
@@ -36,8 +36,8 @@
 - def foreach(f: (A) ⇒ Unit): Unit ==> This means that it's designed to execute functions with side-effects.
 
 ### Combinatorial seach and For-expressions
-- Lorsque des opérations nécéssite des boules on peut utiliser des high order fonction sur les séquences
-- Parfois map, filter, Fold sont très pratique mais rendent le code très difficile à comprendre alors les For-expressions peuvent aider
+- Lorsque des opérations nécéssitent des loop on peut utiliser des high order fonction sur les séquences
+- Parfois map, filter, Fold sont très pratiques mais rendent le code très difficile à comprendre alors les For-expressions peuvent aider
 ```scala
 def isPrime(x : Int):  Boolean = { (2 until x) forall (y => x%y!=0) }
 
@@ -60,7 +60,7 @@ xs flatMap f = (xs map f).flatten
  - **generateur**: forme p<-e avec p un pattern et e une expression dont la valeur est une collection
  - **filter** : forme avec if
  - la sequence s doit commencer par un générateur
-- e : est une expressions avec la valeur retourné par une itération
+- e : est une expressions avec la valeur retournée par une itération
 
 ### Combinatorial Search example
 
@@ -75,7 +75,7 @@ xs flatMap f = (xs map f).flatten
 - Aucune queen doit être sur la même colonne, sur la même ligne ou la même diagonale
 - Solution :
  - On suppose qu'on a déja généré les solutions pour placer k-1 queens sur un chessboard de n
- - Chaque solution est composé de la liste des colonnes par ordre de k-1 queen, k-2 queen, ...
+ - Chaque solution est composée de la liste des colonnes par ordre de k-1 queen, k-2 queen, ...
  - On ajoute la k queen avec toutes les extensions possibles à partir des solutions déja existantes
 ```scala
 def Queens(n:Int) : Set[List[Int]] = {
@@ -167,7 +167,6 @@ val mnemonics = Map(
     - Sécurisé : Type checker
     - Rapide 
     - Universel : un vocabulaire pour toutes les collections
-
 
 
 

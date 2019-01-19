@@ -2,18 +2,18 @@
 ###
 ### Class Hierarchies
 - ** Abstract Classes ** : est une classe qui peut contenir des membres sans implémentation, on ne peut créer une nouvelle instance avec new
-- ** Abstract Classes ** : permet ensuite de créer des extensions **extend** à cette classe, les classes extend doivent être conforme à l'abstract classe
+- ** Abstract Classes ** : permet ensuite de créer des extensions **extend** à cette classe, les classes extend doivent être conformes à l'abstract classe
 - Lorsqu'on crée une classe à partir d'une abstract classe on parle de **superclass** et de **subclasse** pour la classe créée à partir de l'abstract classe
 - La superclasse par défaut est la classe object (in the Java package java.lang)
 - Dans les subclasse on implémente les abstract fonctions non définies
 - On peut aussi redéfinir des fonctions avec la commande **override**
-- **object** : On peut utiliser object lorsqu'une classe est créée plusieurs fois alors qu'il s'agit toujours de la même, exemeple new Empty devient Empty, On parle de **singleton object**
+- **object** : On peut utiliser object lorsqu'une classe est créée plusieurs fois alors qu'il s'agit toujours de la même, exemple new Empty devient Empty, On parle de **singleton object**
 - standalone applications, on crée une fonction main dans un object. Une fois le programme compilé il suffit de faire scala le nom de l'object
 - **dynamic method dispatch** : This means that the code invoked by a method call depends on the runtime type of the object that contains the method. Dynamic dispatch of methods is analogous to calls to higher-order functions.
 
 ### How Classes are Organized
 
-- classes et object sont organisés dans des packages
+- classes et object sont organisées dans des packages
 ```scala
 package progfun.examples
 object Hello { ... }
@@ -23,8 +23,8 @@ object Hello { ... }
 - wildcard import : import week3._
 - Automatic Imports : All members of package scala, All members of package java.langAll members of the singleton object scala.Predef
 - On peut définir une abstract classe comme un **trait**. Simplement on remplace abstract classe par trait
-- En scala, une classe peut avoir seulement une superclasse mais elle peut hériter de plusieurs trait donc on peut utiliser les traits pour conformer une classe à plusieurs types
-- Les traits ne peuvent pas avoir de valeurs/paramètres seulement les classes peuvents
+- En scala, une classe peut avoir seulement une superclasse mais elle peut hériter de plusieurs traits donc on peut utiliser les traits pour conformer une classe à plusieurs types
+- Les traits ne peuvent pas avoir de valeurs/paramètres seulement les classes peuvent
 - Any the base type of all types
 - AnyRef The base type of all reference types Alias of java.lang.Object
 - AnyVal The base type of all primitive types Int, Double, Boolean ...
@@ -33,9 +33,9 @@ object Hello { ... }
 
 ### Polymorphism
 
-- Une strucutre importante dans les langages fonctionnel est la liste lié immutable. Elle est construit en deux block : Nil & Cons
+- Une strucutre importante dans les langages fonctionnel est la liste liée immutable. Elle est construite en deux block : Nil & Cons
 - On peut utiliser **val** directement dans la définition des paramètres de classe. Ainsi, on a pas a définir la variable dans le block de la classe
-- En scala on peut définir/généraliser une définition avec **Type Parameters**. Ainsi, la classe ou def existe pour plusieurs type (Int, Double, ...)
+- En scala on peut définir/généraliser une définition avec **Type Parameters**. Ainsi, la classe ou def existe pour plusieurs types (Int, Double, ...)
 ```scala
 class Cons[T](val head: T, val tail: List[T]) extends List[T]
 def singleton[T](elem: T) = new Cons[T](elem, new Nil[T])

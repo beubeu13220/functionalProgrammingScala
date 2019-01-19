@@ -1,9 +1,9 @@
 # Week 1
 ###
 ### Programming paradigms
-Plusieurs paradigme de programmation :
+Plusieurs paradigmes de programmation :
 - Imperatif :
-    - Modification des variables mutable
+    - Modification des variables mutables
     - assignements
     - Control structure comme if-else, loops, break, continue, ...
     - Limité
@@ -11,12 +11,12 @@ Plusieurs paradigme de programmation :
 est un paradigme de programmation de type déclaratif qui considère le calcul en tant qu'évaluation de fonctions mathématiques.
     - Restrictif : sans variable mutable, sans assignement, sans loops, ...
     - plus largement : focus sur les fonctions
-    - en particulier : les fonctions peuvent etre des valeur, composé, consommnée
+    - en particulier : les fonctions peuvent etre des valeurs, composées, consommées
     
 ### Elements of Programming  
 - On évalue la variable le plus à gauche
 - puis l'opération la plus à gauche
-- puis on itère jusqu'a valeur
+- puis on itère jusqu'a la valeur
 Exemple **call-by-value** :
     - (2 * pi) * radius
     - (2 * 3.14159) * radius
@@ -34,7 +34,7 @@ Exemple :
     - 9 + 16
     - 25
 
-- Le schema ci-dessous d'évaluation est appélé **"the substitution model"**
+- Le schema ci-dessous d'évaluation est appelé **"the substitution model"**
 - L'idée est de réduire une expression à une valeur
 - Le modèle de subsitution est formalisé dans lambda calculus
 - Parfois la stratégie de réduction à la valeur ne fonctionne pas il faut alors changer de méthode d'évaluation
@@ -52,7 +52,7 @@ Exemple :
 
 
 ### Evaluation Strategies and Termination
-- Si une évaluation par valeur est terminé alors l'évaluation par nom aussi
+- Si une évaluation par valeur est terminée alors l'évaluation par nom aussi
 - La réciproque n'est pas vrai 
 - **Evalution par défaut est call-by-value**
 - Si un paramètre commence avec **=>** alors on utilise call-by-name
@@ -65,20 +65,20 @@ Exemple :
 - false && e --> false
 - true || e --> true
 - false || e --> e
-- || et && n'ont pas besoin de l'opérateur de droite e pour être évalué
+- || et && n'ont pas besoin de l'opérateur de droite pour être évalué
 - *def* est évalué par **call-by-name**
 - On a aussi *val* par valeur
-- Exmple : 
+- Exemple : 
     - val y = square(x)
     - def square(x: Double) = x * x
-- La différence entre val & def est apparente lorsque l'évaluation n'est pas terminé
+- La différence entre val & def est apparente lorsque l'évaluation n'est pas terminée
 - L'expression def=loop est ok par contre val x = loop est infinie 
     
 ### Blocks and Lexical Scope
 - Nested function : On split les étapes dans un fonction en plusieurs fonctions en définisant les fonctions auxiliaires 
-à l'interieur de la fonction. ça évite aussi de poluer le namespace et que l'utilisation est accès à ces fonctions.
-- Un block en scala est délimité par des {} : Il contient une séquence de définitions ou d'expression
-- le dernier élément d'un blcok est une valeur
+à l'interieur de la fonction. ça évite aussi de polluer le namespace et que l'utilisateur ait accès à ces fonctions.
+- Un block en scala est délimité par des {} : Il contient une séquence de définitions ou d'expressions
+- le dernier élément d'un block est une valeur
 - Dans un block une définition par exemple le x en paramètre est visible de partout, et signifie toujours la même chose. 
 Exemple dans srqt() 
 
@@ -90,4 +90,3 @@ Exemple dans srqt()
  would be sufficient for both functions. Such calls are called tail-calls.
  - **Lorsqu'on souhaite avoir une fonction tail recursive on peut écrire @tailrec comme ça si ce n'est pas le cas on aura 
  une erreur**
-

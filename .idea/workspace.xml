@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08df0c3b-602a-4c86-82cb-b08a4a97502e" name="Default Changelist" comment="" />
+    <list default="true" id="08df0c3b-602a-4c86-82cb-b08a4a97502e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Memo/week1/week1.md" beforeDir="false" afterPath="$PROJECT_DIR$/Memo/week1/week1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Memo/week2/week2.md" beforeDir="false" afterPath="$PROJECT_DIR$/Memo/week2/week2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Memo/week3/week3.md" beforeDir="false" afterPath="$PROJECT_DIR$/Memo/week3/week3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Memo/week4/week4.md" beforeDir="false" afterPath="$PROJECT_DIR$/Memo/week4/week4.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Memo/week5/week5.md" beforeDir="false" afterPath="$PROJECT_DIR$/Memo/week5/week5.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Memo/week6/week6.md" beforeDir="false" afterPath="$PROJECT_DIR$/Memo/week6/week6.md" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -19,14 +27,68 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Memo/week1/week1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="165">
+                <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Memo/week2/week2.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="248">
+                <caret line="95" column="15" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Memo/week3/week3.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="308">
+                <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Memo/week4/week4.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="127">
-                <caret line="35" selection-start-line="35" selection-end-line="36" selection-end-column="8" />
+              <first_editor relative-caret-position="218">
+                <caret line="96" column="8" lean-forward="true" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
                 <folding>
                   <element signature="n#insert#0" expanded="true" />
-                  <element signature="n#isort#0" expanded="true" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Memo/week5/week5.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-1146">
+                <caret line="20" selection-start-line="20" selection-end-line="20" />
+                <folding>
+                  <element signature="n#flatten#0" expanded="true" />
+                  <element signature="n#msort#0" expanded="true" />
+                  <element signature="n#map#0" expanded="true" />
+                  <element signature="n#filter#0" expanded="true" />
+                  <element signature="n#reduceRight#0" expanded="true" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -38,8 +100,8 @@
         <entry file="file://$PROJECT_DIR$/Memo/week6/week6.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="159">
-                <caret line="153" column="31" lean-forward="true" selection-start-line="153" selection-start-column="31" selection-end-line="153" selection-end-column="31" />
+              <first_editor relative-caret-position="219">
+                <caret line="154" lean-forward="true" selection-start-line="154" selection-end-line="154" />
                 <folding>
                   <element signature="n#Queens#0" expanded="true" />
                 </folding>
@@ -50,6 +112,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -69,9 +138,12 @@
         <option value="$PROJECT_DIR$/src/main/scala/objsets/TweetData.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/objsetsTest/TweetSetSuite.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/objsets/TweetSet.scala" />
-        <option value="$PROJECT_DIR$/Memo/week3/week3.md" />
         <option value="$PROJECT_DIR$/src/main/scala/patmat/Huffman.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/patmatTests/HuffmanSuite.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/forcomp/Anagrams.scala" />
+        <option value="$PROJECT_DIR$/Memo/week1/week1.md" />
+        <option value="$PROJECT_DIR$/Memo/week2/week2.md" />
+        <option value="$PROJECT_DIR$/Memo/week3/week3.md" />
         <option value="$PROJECT_DIR$/Memo/week4/week4.md" />
         <option value="$PROJECT_DIR$/Memo/week5/week5.md" />
         <option value="$PROJECT_DIR$/Memo/week6/week6.md" />
@@ -79,10 +151,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-103" />
-    <option name="y" value="136" />
-    <option name="width" value="1301" />
-    <option name="height" value="772" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -90,7 +162,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,29 +177,20 @@
             <path>
               <item name="functionalprogrammingscala" type="b2602c69:ProjectViewProjectNode" />
               <item name="functionalProgrammingScala" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="functionalprogrammingscala" type="b2602c69:ProjectViewProjectNode" />
-              <item name="functionalProgrammingScala" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="functionalprogrammingscala" type="b2602c69:ProjectViewProjectNode" />
-              <item name="functionalProgrammingScala" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Memo" type="462c0819:PsiDirectoryNode" />
+              <item name="week6" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547677076623" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../renforcemetLearning" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547904523616" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reinforcement_learning_stick_game" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -239,14 +301,20 @@
       <option name="project" value="LOCAL" />
       <updated>1547244054517</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Assignement Week 6">
+      <created>1547677102685</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1547677102685</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
-    <editor active="true" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2565737" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17529881" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -260,7 +328,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32868218" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -284,7 +352,9 @@
     <MESSAGE value="Submission week 4" />
     <MESSAGE value="Memo week 5" />
     <MESSAGE value="Memo week 6 + Resources week 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Memo week 6 + Resources week 6" />
+    <MESSAGE value="Assignement Week 6" />
+    <MESSAGE value="Review memo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Review memo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/scala/objsetsTest/TweetData.scala" />
@@ -306,42 +376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Memo/week1/week1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Memo/week2/week2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="210">
-            <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Memo/week3/week3.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="495">
-            <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/patmat/Huffman.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -359,30 +393,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Memo/week5/week5.md">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/forcompTests/AnagramsSuite.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/forcomp/Anagrams.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/funsets/FunSets.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Memo/week1/week1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="234">
-            <caret line="111" column="19" lean-forward="true" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
-            <folding>
-              <element signature="n#flatten#0" expanded="true" />
-              <element signature="n#msort#0" expanded="true" />
-              <element signature="n#map#0" expanded="true" />
-              <element signature="n#filter#0" expanded="true" />
-            </folding>
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Memo/week2/week2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="248">
+            <caret line="95" column="15" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Memo/week3/week3.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="308">
+            <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Memo/week4/week4.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="127">
-            <caret line="35" selection-start-line="35" selection-end-line="36" selection-end-column="8" />
+          <first_editor relative-caret-position="218">
+            <caret line="96" column="8" lean-forward="true" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
             <folding>
               <element signature="n#insert#0" expanded="true" />
-              <element signature="n#isort#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Memo/week5/week5.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1146">
+            <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <folding>
+              <element signature="n#flatten#0" expanded="true" />
+              <element signature="n#msort#0" expanded="true" />
+              <element signature="n#map#0" expanded="true" />
+              <element signature="n#filter#0" expanded="true" />
+              <element signature="n#reduceRight#0" expanded="true" />
             </folding>
           </first_editor>
           <second_editor />
@@ -392,8 +483,8 @@
     <entry file="file://$PROJECT_DIR$/Memo/week6/week6.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="159">
-            <caret line="153" column="31" lean-forward="true" selection-start-line="153" selection-start-column="31" selection-end-line="153" selection-end-column="31" />
+          <first_editor relative-caret-position="219">
+            <caret line="154" lean-forward="true" selection-start-line="154" selection-end-line="154" />
             <folding>
               <element signature="n#Queens#0" expanded="true" />
             </folding>

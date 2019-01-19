@@ -3,21 +3,21 @@
 ### More Functions on lists
 
 **List Methods**
-- .head / .tail : Premier éléments / Tous les élements sauf le premier (complexité : constante time)
+- .head / .tail : Premier élément / Tous les élements sauf le premier (complexité : constante time)
 - xs.length : Longueur de la liste
 - xs.last  : Le dernier élément (complexité : proportionnelle à la taille de xs n)
-- xs.init  : Tous les élements saut le dernier
+- xs.init  : Tous les élements sauf le dernier
 - xs take n : Les n premiers éléments de xs
 - xs drop n : Le reste de xs après avoir enlevé n élements
 - xs(n)  : L'élement à l'index n de la liste xs
 - Created New list
-- xs ++ ys  like (:::) : Une liste avec tous les éléments de xs suivie de tous les élements de ys (complexité : proportionnelle à la taille xs n)
+- xs ++ ys  like (:::) : Une liste avec tous les éléments de xs suivis de tous les élements de ys (complexité : proportionnelle à la taille xs n)
 - xs.reverse  : Tous les élements de xs dans l'ordre inverse (Complexité : avec solution simple n², on parcourt xs puis le concat en complexité n)
 - xs updated (n, x) : La liste xs avec l'élement n remplacé par la valeur x
 - xs :: ys : Une nouvelle liste où xs est le premier élement de la nouvelle liste, et les autres élements la liste ys
 - Finding Elements
-- xs indexOf x  : L'index de l'élement x dans la liste xs, l'index de la première occuenre sinon -1
-- xs contains x :  Pareille que (xs indexOf x)>= 0, il existe un index pour la variable recherché
+- xs indexOf x  : L'index de l'élement x dans la liste xs, l'index de la première occurence sinon -1
+- xs contains x :  Pareille que (xs indexOf x)>= 0, il existe un index pour la variable recherchée
 
 ```Scala
 def flatten(xs: List[Any]): List[Any] = xs match {
@@ -30,7 +30,7 @@ def flatten(xs: List[Any]): List[Any] = xs match {
 ### Pairs and Tuples
 
 - Implémentation de **merge sort** (tri fusion), plus éfficace qu' insertion sort :
-- Separer la liste en deux sous liste avec chacune d'entre elle qui contient la moitié des éléments
+- Separer la liste en deux sous listes avec chacune d'entre elle qui contient la moitié des éléments
 - Trier les deux listes
 - Merge les deux listes
 - Complexité O(n log n)
@@ -49,7 +49,7 @@ merge(msort(fst), msort(snd))
 }
 }
 ```
-- **splitAt** retourne deux sous listes sous forme de **pair**, avec la premier liste de longueur du paramètre n de splitAt
+- **splitAt** retourne deux sous listes sous forme de **pair**, avec la premiere liste de longueur du paramètre n de splitAt
 - **pair** s'écrit (x,y) en scala. On peut aussi utiliser pattern matching sur les pair
 - **tuples** il s'agit de pair avec plus de deux élements donc même fonctionnement que les pairs
 - On peut accéder aux élements tuples/pair avec _1,_2, ...
@@ -61,16 +61,16 @@ val value = pair._2
 
 ### Implicit Parameters
 
-- Objectif rendre des fonctions plus générale, par exemple msort en List[Int] to List[T]
+- Objectif rendre des fonctions plus générales, par exemple msort en List[Int] to List[T]
 - Il faut parametriser la merge avec la bonne fonction de comparaison
 - def msort[T](xs: List[T])(lt : (T,T)=> Boolean): List[T] : On ajoute en paramètre une fonction lt qu'on va utiliser pour la comparaison
 - Il existe une class **scala.math.Ordering[T]** pour comparer les élements de type T. On utilise ensuite l'opération lt
 - Définir Ordering ou une fonction lt est très lourd. Ainsi on peut utiliser la notion **implicit**
-- Le compiler comprend seule de quelle fonction Ordering il s'agit à partir du type
+- Le compiler comprend seul de quelle fonction Ordering il s'agit à partir du type
 - Le compiler cherche une fonction implicit tel que
-    -   Elle est définit implicit
+    -   Elle est définie implicit
     -   Elle est compatible avec le Type
-    -   Elle est définit dans l'objet ou elle est visible au moment de l'appel
+    -   Elle est définie dans l'objet ou elle est visible au moment de l'appel
 
 ### Higher-Order List Functions
 - Map : Une fonction pour appliquer une fonction/transformation à chaque élement

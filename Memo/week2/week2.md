@@ -3,15 +3,15 @@
 ### Higher-Order Functions 
 - Les fonctions sont considérées comme **first-class values**
 - Cad que toutes les fonctions peuvent être utilisées comme des paramètres et retourner un résultat
-- Une fonction qui prend en paramètre une fonction ou bien retourne une fonction est appelée **high order functions**
+- Une fonction qui prend en paramètre une fonction ou bien retourne une fonction qui est appelée **high order functions**
 - **anonymous functions** : ecrire une fonction sans lui donner de nom exemple : (x: Int) => x * x * x
-- Dans une fonctione anonyme on peut omettre le type return si il peut être inféré dans le contexte 
+- Dans une fonction anonyme on peut omettre le type return si il peut être inféré dans le contexte 
 - **syntactic sugar**
 
 ### Currying
 La curryfication est la transformation d'une fonction à plusieurs arguments en une fonction à un argument qui retourne 
 une fonction sur le reste des arguments. La curryfication permet de créer des fonctions pures. L'opération inverse est
- possible et s'appelle la décurryfication
+possible et s'appelle la décurryfication
 ```scala
  def sum(f: Int => Int): (Int, Int) => Int = {
      def sumF(a: Int, b: Int): Int =
@@ -63,18 +63,18 @@ def sqrt(x: Double) = fixedPoint(y => (y + x / y) / 2)(1.0)
     - A call-by-name parameter, like (y: => Double).
 
 ### Functions and Data
-- Cour pour créer des data structure 
+- Cours pour créer des data structure 
 - Exemple sur les nombres rationnels
 - Plutot qu'utiliser des fonctions on crée une nouvelle class pour avoir un nouveau type rationnel
-- scala conserve les noms des types et des valeurs dans deux namespasce distinct donc pas de risque de conflit
+- scala conserve les noms des types et des valeurs dans deux namespasce distincts donc pas de risque de conflit
 - on peut créer un nouvel object avec la commande new par exemple new Rationnal(1,2)
 - Les fonctions dans la class sont appelées des méthodes
 - **override** signifie qu'on définit une méthode qui existe déja (par défaut dans the class java.lang.Object) 
 
 ### More Fun with Rationals
 - private val/def : on peut accéder seulement à ces méthodes à l'intérieur d'une class
-- La capacité à choisir différentes implémentations de la structure data sans affecté la class est appelée **data abstraction** 
-- **this** dans classe représente l'object actuelle sur lequelle la méthode est appliquée
+- La capacité à choisir différentes implémentations de la structure data sans affecter la class est appelée **data abstraction** 
+- **this** dans classe représente l'object actuel sur lequel la méthode est appliquée
 - **that** un autre object sur lequel on applique une méthode
 - **require** is a predefined function : permet de tester des conditions sur la class, is used to enforce a precondition on the caller of a function.
 - **assert** is used as to check the code of the function itself.
@@ -103,7 +103,7 @@ def + (r: Rational) = new Rational(numer * r.denom + r.numer * denom,denom * r.d
 def - (r: Rational) = ...
 def * (r: Rational) = ...
 ```
-- L'ordre de priorité en scala est déterminé par le premier charactère 
+- L'ordre de priorité en scala est déterminé par le premier caractere 
 - Ordre croissant des priorités :
     - (all letters) (the lowest)
     - |
@@ -111,7 +111,7 @@ def * (r: Rational) = ...
     - &
     - < >
     - = !
-    - :
-    - + -
-    - * / %
+    - \:
+    - \+ -
+    - \* / %
     - (all other special characters) (the highest)
