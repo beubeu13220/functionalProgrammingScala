@@ -1,9 +1,6 @@
 # Functional Programming in Scala
 
 
-*Version 0.1* : Exercices + Memo du cours *Functional Programming Principles in Scala* sur Coursera
-
-
 - Directory Memo : Contient toutes les notes prises sur le cours + des resources additonnelles 
 - Directory src/main/ : Tous les exercices en Scala 
 - Directory src/test : Tous les tests des exercices réalisés  
